@@ -1,0 +1,76 @@
+.b-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 80px;
+
+}
+
+.b-pokemon-card {
+    background-color: #eee;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 2px 5px grey;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    position: relative;
+    border: 3px solid transparent;
+    perspective: 2000px;
+
+    &:hover {
+        border: 3px solid #ecc400
+    }
+    
+}
+
+.b-frontFace {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.b-backFace {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.b-pokemon__imgContainer {
+    background-color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.b-pokemon__info {
+    margin-top: 30px;
+}
+
+.b-pokemon__img {
+    max-width: 70%;
+    margin-top: 20px;
+}
+
+.b-pokemon__id {
+    background: rgb(236,196,0);
+    background: -moz-linear-gradient(163deg, rgba(236,196,0,1) 68%, rgba(212,205,189,1) 100%);
+    background: -webkit-linear-gradient(163deg, rgba(236,196,0,1) 68%, rgba(212,205,189,1) 100%);
+    background: linear-gradient(163deg, rgba(236,196,0,1) 68%, rgba(212,205,189,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecc400",endColorstr="#d4cdbd",GradientType=1);
+    border-radius: 6px;
+    padding: 3px;
+}
+
+.is-flipped {
+    transform: rotateY(-180deg);
+}
+

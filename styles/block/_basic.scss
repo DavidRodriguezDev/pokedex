@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background: rgb(72,145,231);
+    background: -moz-linear-gradient(120deg, rgba(72,145,231,1) 1%, rgba(226,219,82,1) 100%);
+    background: -webkit-linear-gradient(120deg, rgba(72,145,231,1) 1%, rgba(226,219,82,1) 100%);
+    background: linear-gradient(120deg, rgba(72,145,231,1) 1%, rgba(226,219,82,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4891e7",endColorstr="#e2db52",GradientType=1);
+}
+
+
+
+/*FUENTES*/
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 300;
+    src: url(/fonts/Roboto/Roboto-Light.ttf);
+} 
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url(/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url(/fonts/Roboto/Roboto-Medium.ttf);
+}
+  
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url(/fonts/Roboto/Roboto-Bold.ttf);
+} 
+
+.b-text {
+    font-family: "Roboto";
+    font-weight: 400;
+    margin: 5px;
+
+    &--regular {
+        font-family: "Roboto";
+        font-weight: 500;
+    }
+    
+    &--light {
+        font-family: "Roboto";
+        font-weight: 300;
+    }
+    
+    &--bold {
+        font-family: "Roboto";
+        font-weight: 700;
+        color: rgb(53, 51, 50);
+    }
+
+}
